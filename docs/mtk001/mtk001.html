@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>皆解会001</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <style>
+            iframe {
+                width: 100%;
+                height: 100%;
+                min-height: 500px;
+                margin-left: 20px;
+                margin-right: 20px;
+                border: 0px solid gray;
+            }
+        </style>
+    </head>
+    <body style="padding-top: 50px;">
+        <div class="d-flex" id="wrapper">
+            
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0 h1" style="padding-left:16px;"><a class="navbar-brand" href="#">皆解会001</a></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#overview">コンテスト概要</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#ranking_team">チームランキング</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#ranking_individual">個人ランキング</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#line_team">チームスコア</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#line_individual">個人スコア</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#box_lang">言語別スコア分布</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="col">
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold" id="overview">コンテスト概要</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                              <p>問題：<a href="https://atcoder.jp/contests/ahc001/tasks/ahc001_ahttps://atcoder.jp/contests/ahc001/tasks/ahc001_a">AtCoder Ad</a></p>
+                              <p>コンテスト期間：2022/10/13 19:00 - 2022/10/20 19:00</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="ranking_team">チームランキング</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                  <table class="dataframe table table-striped table-hover">
+                                    <thead>
+                                      <tr style="text-align: left;">
+                                        <th>順位</th>
+                                        <th>チーム名</th>
+                                        <th>名前</th>
+                                        <th>スコア</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>松竹梅</td>
+                                        <td>takekinmkk</td>
+                                        <td>48951109803</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>a･Cyan</td>
+                                        <td>jabee</td>
+                                        <td>48663972389</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>バベルクライマーズ</td>
+                                        <td>fujikawahiroaki</td>
+                                        <td>48036924202</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>運営</td>
+                                        <td>ainem</td>
+                                        <td>47945432845</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>家買え</td>
+                                        <td>akane831</td>
+                                        <td>47594319404</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>ブレインバクハーズ</td>
+                                        <td>hiraku</td>
+                                        <td>47566083767</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="ranking_individual">個人ランキング</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                  <table class="dataframe table table-striped table-hover">
+                                    <thead>
+                                      <tr style="text-align: left;">
+                                        <th>順位</th>
+                                        <th>名前</th>
+                                        <th>チーム名</th>
+                                        <th>スコア</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>takekinmkk</td>
+                                        <td>松竹梅</td>
+                                        <td>48951109803</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>jabee</td>
+                                        <td>a･Cyan</td>
+                                        <td>48663972389</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>ponjuice</td>
+                                        <td>松竹梅</td>
+                                        <td>48154137543</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>keroru</td>
+                                        <td>松竹梅</td>
+                                        <td>48103891151</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>fujikawahiroaki</td>
+                                        <td>バベルクライマーズ</td>
+                                        <td>48036924202</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>meowmeowcats</td>
+                                        <td>バベルクライマーズ</td>
+                                        <td>48006025749</td>
+                                      </tr>
+                                      <tr>
+                                        <td>7</td>
+                                        <td>r3yohei</td>
+                                        <td>バベルクライマーズ</td>
+                                        <td>47972092120</td>
+                                      </tr>
+                                      <tr>
+                                        <td>8</td>
+                                        <td>ainem</td>
+                                        <td>運営</td>
+                                        <td>47945432845</td>
+                                      </tr>
+                                      <tr>
+                                        <td>9</td>
+                                        <td>matsu7874</td>
+                                        <td>松竹梅</td>
+                                        <td>47801921886</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10</td>
+                                        <td>kaede2020</td>
+                                        <td>a･Cyan</td>
+                                        <td>47777417079</td>
+                                      </tr>
+                                      <tr>
+                                        <td>11</td>
+                                        <td>akane831</td>
+                                        <td>家買え</td>
+                                        <td>47594319404</td>
+                                      </tr>
+                                      <tr>
+                                        <td>12</td>
+                                        <td>hiraku</td>
+                                        <td>ブレインバクハーズ</td>
+                                        <td>47566083767</td>
+                                      </tr>
+                                      <tr>
+                                        <td>13</td>
+                                        <td>jaku</td>
+                                        <td>a･Cyan</td>
+                                        <td>47369635657</td>
+                                      </tr>
+                                      <tr>
+                                        <td>14</td>
+                                        <td>Gex777</td>
+                                        <td>家買え</td>
+                                        <td>45834159171</td>
+                                      </tr>
+                                      <tr>
+                                        <td>15</td>
+                                        <td>take911</td>
+                                        <td>a･Cyan</td>
+                                        <td>45738960199</td>
+                                      </tr>
+                                      <tr>
+                                        <td>16</td>
+                                        <td>michirakara</td>
+                                        <td>家買え</td>
+                                        <td>45050575633</td>
+                                      </tr>
+                                      <tr>
+                                        <td>17</td>
+                                        <td>nakashiii</td>
+                                        <td>家買え</td>
+                                        <td>44095986810</td>
+                                      </tr>
+                                      <tr>
+                                        <td>18</td>
+                                        <td>netobas</td>
+                                        <td>家買え</td>
+                                        <td>42910236721</td>
+                                      </tr>
+                                      <tr>
+                                        <td>19</td>
+                                        <td>gengar_094</td>
+                                        <td>ブレインバクハーズ</td>
+                                        <td>42114627814</td>
+                                      </tr>
+                                      <tr>
+                                        <td>20</td>
+                                        <td>tnodino</td>
+                                        <td>ブレインバクハーズ</td>
+                                        <td>26553335715</td>
+                                      </tr>
+                                      <tr>
+                                        <td>21</td>
+                                        <td>negibose2020</td>
+                                        <td>ブレインバクハーズ</td>
+                                        <td>5992414293</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="line_team">チームスコア</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="line_team.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="line_individual">個人スコア</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="line_individual.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="box_lang">言語別のスコア分布</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="box_lang.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
