@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>皆解会003</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <style>
+            iframe {
+                width: 100%;
+                height: 100%;
+                min-height: 500px;
+                margin-left: 20px;
+                margin-right: 20px;
+                border: 0px solid gray;
+            }
+        </style>
+    </head>
+    <body style="padding-top: 50px;">
+        <div class="d-flex" id="wrapper">
+            
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0 h1" style="padding-left:16px;"><a class="navbar-brand" href="#">皆解会003</a></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#overview">コンテスト概要</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#ranking_team">チームランキング</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#ranking_individual">個人ランキング</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#line_team">チームスコア</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#line_individual">個人スコア</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#box_lang">言語別スコア分布</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="col">
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold" id="overview">コンテスト概要</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                              <p>問題：<a href="https://atcoder.jp/contests/rco-contest-2019-qual/tasks/rco_contest_2019_qual_b">ファーマーXの収穫計画</a></p>
+                              <p>コンテスト期間：2023/01/13 19:00 - 2023/01/22 19:00</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="ranking_team">チームランキング</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                  <table class="dataframe table table-striped table-hover">
+                                    <thead>
+                                      <tr style="text-align: left;">
+                                        <th>順位</th>
+                                        <th>チーム名</th>
+                                        <th>名前</th>
+                                        <th>スコア</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>cplusplusonly</td>
+                                        <td>652081</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>山走暁飛</td>
+                                        <td>highjump</td>
+                                        <td>647497</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>zatt</td>
+                                        <td>621224</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>benchmark</td>
+                                        <td>r3yohei</td>
+                                        <td>611568</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>輝かしい未来を目指す不屈の戦い人</td>
+                                        <td>akane831</td>
+                                        <td>594863</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>運営</td>
+                                        <td>ainem</td>
+                                        <td>593008</td>
+                                      </tr>
+                                      <tr>
+                                        <td>7</td>
+                                        <td>逆襲のバベルクライマーズ</td>
+                                        <td>yuuki_n</td>
+                                        <td>577842</td>
+                                      </tr>
+                                      <tr>
+                                        <td>8</td>
+                                        <td>AHCやってみ隊</td>
+                                        <td>jamuojisan</td>
+                                        <td>563004</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="ranking_individual">個人ランキング</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                  <table class="dataframe table table-striped table-hover">
+                                    <thead>
+                                      <tr style="text-align: left;">
+                                        <th>順位</th>
+                                        <th>名前</th>
+                                        <th>チーム名</th>
+                                        <th>スコア</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>cplusplusonly</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>652081</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>highjump</td>
+                                        <td>山走暁飛</td>
+                                        <td>647497</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>zatt</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>621224</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>hiraku</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>620430</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>8wings</td>
+                                        <td>山走暁飛</td>
+                                        <td>615680</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>r3yohei</td>
+                                        <td>benchmark</td>
+                                        <td>611568</td>
+                                      </tr>
+                                      <tr>
+                                        <td>7</td>
+                                        <td>brthyyjp</td>
+                                        <td>benchmark</td>
+                                        <td>597179</td>
+                                      </tr>
+                                      <tr>
+                                        <td>8</td>
+                                        <td>akane831</td>
+                                        <td>輝かしい未来を目指す不屈の戦い人</td>
+                                        <td>594863</td>
+                                      </tr>
+                                      <tr>
+                                        <td>9</td>
+                                        <td>ainem</td>
+                                        <td>運営</td>
+                                        <td>593008</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10</td>
+                                        <td>bio4eta</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>591760</td>
+                                      </tr>
+                                      <tr>
+                                        <td>11</td>
+                                        <td>yuuki_n</td>
+                                        <td>逆襲のバベルクライマーズ</td>
+                                        <td>577842</td>
+                                      </tr>
+                                      <tr>
+                                        <td>12</td>
+                                        <td>fujikawahiroaki</td>
+                                        <td>逆襲のバベルクライマーズ</td>
+                                        <td>565300</td>
+                                      </tr>
+                                      <tr>
+                                        <td>13</td>
+                                        <td>jamuojisan</td>
+                                        <td>AHCやってみ隊</td>
+                                        <td>563004</td>
+                                      </tr>
+                                      <tr>
+                                        <td>14</td>
+                                        <td>keroru</td>
+                                        <td>輝かしい未来を目指す不屈の戦い人</td>
+                                        <td>553780</td>
+                                      </tr>
+                                      <tr>
+                                        <td>15</td>
+                                        <td>gunmaneko</td>
+                                        <td>AHCやってみ隊</td>
+                                        <td>552753</td>
+                                      </tr>
+                                      <tr>
+                                        <td>16</td>
+                                        <td>motoshira</td>
+                                        <td>逆襲のバベルクライマーズ</td>
+                                        <td>551907</td>
+                                      </tr>
+                                      <tr>
+                                        <td>17</td>
+                                        <td>nok0</td>
+                                        <td>山走暁飛</td>
+                                        <td>549267</td>
+                                      </tr>
+                                      <tr>
+                                        <td>18</td>
+                                        <td>hal0taso</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>546358</td>
+                                      </tr>
+                                      <tr>
+                                        <td>19</td>
+                                        <td>michirakara</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>504279</td>
+                                      </tr>
+                                      <tr>
+                                        <td>20</td>
+                                        <td>tnodino</td>
+                                        <td>霧ヶ峰めっちゃ良い買い物しました！！！！</td>
+                                        <td>500627</td>
+                                      </tr>
+                                      <tr>
+                                        <td>21</td>
+                                        <td>uni_kakurenbo</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>476647</td>
+                                      </tr>
+                                      <tr>
+                                        <td>22</td>
+                                        <td>jaku</td>
+                                        <td>輝かしい未来を目指す不屈の戦い人</td>
+                                        <td>469292</td>
+                                      </tr>
+                                      <tr>
+                                        <td>23</td>
+                                        <td>nephrologist</td>
+                                        <td>benchmark</td>
+                                        <td>336739</td>
+                                      </tr>
+                                      <tr>
+                                        <td>24</td>
+                                        <td>utprg</td>
+                                        <td>benchmark</td>
+                                        <td>311335</td>
+                                      </tr>
+                                      <tr>
+                                        <td>25</td>
+                                        <td>otsuneko</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>284121</td>
+                                      </tr>
+                                      <tr>
+                                        <td>26</td>
+                                        <td>burioden</td>
+                                        <td>AHCやってみ隊</td>
+                                        <td>50004</td>
+                                      </tr>
+                                      <tr>
+                                        <td>27</td>
+                                        <td>kokatsu</td>
+                                        <td>逆襲のバベルクライマーズ</td>
+                                        <td>35950</td>
+                                      </tr>
+                                      <tr>
+                                        <td>28</td>
+                                        <td>milkcoffee</td>
+                                        <td>山走暁飛</td>
+                                        <td>35950</td>
+                                      </tr>
+                                      <tr>
+                                        <td>29</td>
+                                        <td>Gex777</td>
+                                        <td>&gt;euphonic</td>
+                                        <td>35950</td>
+                                      </tr>
+                                      <tr>
+                                        <td>30</td>
+                                        <td>keizin</td>
+                                        <td>輝かしい未来を目指す不屈の戦い人</td>
+                                        <td>35950</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="line_team">チームスコア</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="line_team.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="line_individual">個人スコア</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="line_individual.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold" id="box_lang">言語別のスコア分布</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <iframe src="box_lang.html"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
