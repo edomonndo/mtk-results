@@ -270,4 +270,4 @@ for i, table in enumerate(soup.select(".card-body table")):
         talbe.replace_with(table_individual)
 
 with open("docs/mtk006/mtk006.html", "w") as f:
-    f.write(soup)
+    f.write(str(soup))
