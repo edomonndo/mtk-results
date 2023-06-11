@@ -271,4 +271,4 @@ for i, table in enumerate(soup.select(".card-body table")):
         table.replace_with(table_individual)
 
 with open(filepath, mode="w") as f:
-    f.wirte(str(soup))
+    f.write(str(soup))
