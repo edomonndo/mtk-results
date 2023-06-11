@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>皆解会006</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
-        <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<title>皆解会006</title>
+<!-- Favicon-->
+<link href="../assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="../css/styles.css" rel="stylesheet"/>
+<style>
             iframe {
                 width: 100%;
                 height: 100%;
@@ -20,184 +21,200 @@
                 border: 0px solid gray;
             }
         </style>
-    </head>
-    <body style="padding-top: 50px;">
-        <div class="d-flex" id="wrapper">
-            
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
-                    <div class="container-fluid">
-                        <span class="navbar-brand mb-0 h1" style="padding-left:16px;"><a class="navbar-brand" href="#">皆解会006</a></span>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#overview">コンテスト概要</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#ranking_team">チームランキング</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#ranking_individual">個人ランキング</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#line_team">チームスコア</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#line_individual">個人スコア</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#box_lang">言語別スコア分布</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#scatter_rate">スコアとレートの相関関係</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Page content-->
-                <div class="container-fluid">
-                    <div class="row">
-                      <div class="col">
-                        <p></p>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                          <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div
-                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold" id="overview">コンテスト概要</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                              <p>問題：<a href="https://atcoder.jp/contests/ahc020/tasks/ahc020_a">Broadcasting</a></p>
-                              <p>コンテスト期間：2023/06/11 19:00 - 2023/06/18 19:00 (延長戦のため、スコアの集計はAHC020期間中の結果も含めています。)</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold" id="ranking_team">チームランキング</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                  <table class="dataframe table table-striped table-hover">
-                                    <thead>
-                                      <tr style="text-align: left;">
-                                        <th>順位</th>
-                                        <th>チーム名</th>
-                                        <th>名前</th>
-                                        <th>スコア</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody id="tbody_ranking_team">
-                                      <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold" id="ranking_individual">個人ランキング</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                  <table class="dataframe table table-striped table-hover">
-                                    <thead>
-                                      <tr style="text-align: left;">
-                                        <th>順位</th>
-                                        <th>名前</th>
-                                        <th>チーム名</th>
-                                        <th>スコア</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody id="tbody_ranking_individual">
-                                      <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold" id="line_team">チームスコア</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <iframe src="line_team.html"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold" id="line_individual">個人スコア</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <iframe src="line_individual.html"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold" id="box_lang">言語別のスコア分布</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <iframe src="box_lang.html"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                          <div class="card shadow mb-4">
-                              <!-- Card Header - Dropdown -->
-                              <div
-                                  class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                  <h6 class="m-0 font-weight-bold" id="scatter_rate">スコアとレートの相関関係</h6>
-                              </div>
-                              <!-- Card Body -->
-                              <div class="card-body">
-                                  <iframe src="scatter_rate.html"></iframe>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js"></script>
-    </body>
+</head>
+<body style="padding-top: 50px;">
+<div class="d-flex" id="wrapper">
+<!-- Page content wrapper-->
+<div id="page-content-wrapper">
+<!-- Top navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+<div class="container-fluid">
+<span class="navbar-brand mb-0 h1" style="padding-left:16px;"><a class="navbar-brand" href="#">皆解会006</a></span>
+<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#overview">コンテスト概要</a></li>
+<li class="nav-item"><a class="nav-link" href="#ranking_team">チームランキング</a></li>
+<li class="nav-item"><a class="nav-link" href="#ranking_individual">個人ランキング</a></li>
+<li class="nav-item"><a class="nav-link" href="#line_team">チームスコア</a></li>
+<li class="nav-item"><a class="nav-link" href="#line_individual">個人スコア</a></li>
+<li class="nav-item"><a class="nav-link" href="#box_lang">言語別スコア分布</a></li>
+<li class="nav-item"><a class="nav-link" href="#scatter_rate">スコアとレートの相関関係</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Page content-->
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+<p></p>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="overview">コンテスト概要</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<p>問題：<a href="https://atcoder.jp/contests/ahc020/tasks/ahc020_a">Broadcasting</a></p>
+<p>コンテスト期間：2023/06/11 19:00 - 2023/06/18 19:00 (延長戦のため、スコアの集計はAHC020期間中の結果も含めています。)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="ranking_team">チームランキング</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+&lt;table class="dataframe table table-striped table-hover"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: left;"&gt;
+      &lt;th&gt;順位&lt;/th&gt;
+      &lt;th&gt;チーム名&lt;/th&gt;
+      &lt;th&gt;名前&lt;/th&gt;
+      &lt;th&gt;スコア&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;こたえはポンプ&lt;/td&gt;
+      &lt;td&gt;komori3&lt;/td&gt;
+      &lt;td&gt;479086477&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;summery bumblebee&lt;/td&gt;
+      &lt;td&gt;brthyyjp&lt;/td&gt;
+      &lt;td&gt;440849596&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;運営&lt;/td&gt;
+      &lt;td&gt;edomondo&lt;/td&gt;
+      &lt;td&gt;432736381&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Code Novices&lt;/td&gt;
+      &lt;td&gt;Rillaboom2020&lt;/td&gt;
+      &lt;td&gt;423828614&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;四代目バベルクライマーズ&lt;/td&gt;
+      &lt;td&gt;michirakara&lt;/td&gt;
+      &lt;td&gt;418468747&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="ranking_individual">個人ランキング</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<table class="dataframe table table-striped table-hover">
+<thead>
+<tr style="text-align: left;">
+<th>順位</th>
+<th>名前</th>
+<th>チーム名</th>
+<th>スコア</th>
+</tr>
+</thead>
+<tbody id="tbody_ranking_individual">
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="line_team">チームスコア</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<iframe src="line_team.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="line_individual">個人スコア</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<iframe src="line_individual.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="box_lang">言語別のスコア分布</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<iframe src="box_lang.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="card shadow mb-4">
+<!-- Card Header - Dropdown -->
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold" id="scatter_rate">スコアとレートの相関関係</h6>
+</div>
+<!-- Card Body -->
+<div class="card-body">
+<iframe src="scatter_rate.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+</body>
 </html>
