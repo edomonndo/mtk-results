@@ -262,12 +262,13 @@ table_team = df_team.to_html(
     justify="left",
 )
 
-soup = BeautifulSoup("docs/mtk006/mtk006.html", "html.parser")
+filepath = "docs/mtk006/mtk006.html"
+soup = BeautifulSoup(open(filepath), "html.parser")
 for i, table in enumerate(soup.select(".card-body table")):
     if i == 0:
         table.replace_with(table_team)
-    elif i == 1:
-        talbe.replace_with(table_individual)
+    elif i == 0:
+        table.replace_with(table_individual)
 
-with open("docs/mtk006/mtk006.html", "w") as f:
-    f.write(str(soup))
+with open(filepath, mode="w") as f:
+    f.wirte(str(soup))
