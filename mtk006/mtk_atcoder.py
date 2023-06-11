@@ -262,14 +262,15 @@ table_team = df_team.to_html(
 
 filepath = "docs/mtk006/mtk006.html"
 soup = BeautifulSoup(open(filepath), "html.parser")
-for i, table in enumerate(soup.select(".card-body table")):
-    print(table)
-    if i == 0:
-        table.replace_with(table_team)
-    elif i == 0:
-        table.replace_with(table_individual)
-    print(table)
-
+for i, div in enumerate(soup.select(".card-body")):
+    if i == 1:
+        div.clear()
+        table = BeautifulSoup(table_team)
+        div.append(table)
+    elif i == 2:
+        div.clear()
+        table = BeautifulSoup(table_individual)
+        div.append(table)
 
 with open(filepath, mode="w") as f:
     f.write(str(soup))
