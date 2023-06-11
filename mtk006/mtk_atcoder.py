@@ -155,8 +155,6 @@ while True:
         continue
     break
 
-if not_in_record:
-    print("バチャ期間中に提出があったが、参加者に登録されていない：", not_in_record)
 
 df = pd.DataFrame(data=records)
 df.columns = ["名前", "表示名", "チーム名", "言語", "スコア", "提出日時", "実行時間"]
@@ -265,10 +263,13 @@ table_team = df_team.to_html(
 filepath = "docs/mtk006/mtk006.html"
 soup = BeautifulSoup(open(filepath), "html.parser")
 for i, table in enumerate(soup.select(".card-body table")):
+    print(table)
     if i == 0:
         table.replace_with(table_team)
     elif i == 0:
         table.replace_with(table_individual)
+    print(table)
+
 
 with open(filepath, mode="w") as f:
     f.write(str(soup))
