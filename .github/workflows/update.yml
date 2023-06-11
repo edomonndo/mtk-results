@@ -27,8 +27,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run python
+    - name: Run python1
       env:
         ATC_USERNAME: ${{ secrets.ATC_USERNAME }}
         ATC_PASS: ${{ secrets.ATC_PASS }}
       run: python mtk006/mtk_scraping_atcoder.py 
+    - name: Run python2
+      env:
+        ATC_USERNAME: ${{ secrets.ATC_USERNAME }}
+        ATC_PASS: ${{ secrets.ATC_PASS }}
+      run: python mtk006/mtk_process_atcoder.py
