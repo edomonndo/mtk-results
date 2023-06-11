@@ -248,16 +248,26 @@ fig_team.write_html("docs/mtk006/line_team.html")
 # fig_lang.write_html("docs/mtk006/box_lang.html")
 # fig_rate.write_html("docs/mtk006/scatter_rate.html")
 
-df_individual.to_html(
+table_individual = df_individual.to_html(
     border=0,
     classes=["table", "table-striped", "table-hover"],
     index=False,
     justify="left",
 )
 
-df_team.to_html(
+table_team = df_team.to_html(
     border=0,
     classes=["table", "table-striped", "table-hover"],
     index=False,
     justify="left",
 )
+
+soup = BeautifulSoup("docs/mtk006/mtk006.html", "html.parser")
+for i, table in enumerate(soup.select(".card-body table")):
+    if i == 0:
+        table.replace_with(table_team)
+    elif i == 1:
+        talbe.replace_with(table_individual)
+
+with open("docs/mtk006/mtk006.html", "w") as f:
+    f.write(soup)
