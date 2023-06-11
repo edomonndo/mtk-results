@@ -111,8 +111,6 @@ response_cookie = response.cookies
 login = session.post(login_url, data=login_data, cookies=response_cookie)
 time.sleep(2) # 少し時間を置いてみる
 
-standings_url = "https://atcoder.jp/contests/" + contest_id + "/standings/json"
-standings_json = session.get(standings_url).json()
 
 def make_datetime(s: str) -> datetime:
   ymd, hms = s.split(" ")
@@ -174,7 +172,7 @@ while True:
     continue
   break
 
-if not_in_record: print("バチャ期間中に提出があったが、参加者に登録されていない：", not_in_record)
+#if not_in_record: print("バチャ期間中に提出があったが、参加者に登録されていない：", not_in_record)
 
 df = pd.DataFrame(data = records)
 df
