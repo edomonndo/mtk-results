@@ -25,10 +25,10 @@ personal = {
     "sou31415": ["RuSwiftive", "Code Novices", 429, 0, 0],
     "Rillaboom2020": ["MM", "Code Novices", 1425, 0, 0],
     "ayatosuzuki": ["プリン", "Code Novices", 948, 0, 0],
-    "jamuojisan": ["maeda", "immerse bumblebee", 752, 915, 1574],
-    "brthyyjp": ["brthyyjp", "immerse bumblebee", 1714, 1253, 1640],
-    "june193": ["六月", "immerse bumblebee", 1020, 1316, 1669],
-    "motoshira": ["motoshira", "immerse bumblebee", 1395, 1344, 1794],
+    "jamuojisan": ["maeda", "summery bumblebee", 752, 915, 1574],
+    "brthyyjp": ["brthyyjp", "summery bumblebee", 1714, 1253, 1640],
+    "june193": ["六月", "summery bumblebee", 1020, 1316, 1669],
+    "motoshira": ["motoshira", "summery bumblebee", 1395, 1344, 1794],
     "nephrologist": ["ねふ", "四代目バベルクライマーズ", 1566, 1420, 1795],
     "keroru": ["keroru", "四代目バベルクライマーズ", 1607, 1401, 1682],
     "fujikawahiroaki": ["fujikawahiroaki", "四代目バベルクライマーズ", 532, 1342, 1712],
@@ -137,7 +137,7 @@ while True:
                 tname = personal.at[name, "チーム名"]
                 dname = personal.at[name, "名前"]
                 records["name"].append(name)
-                records["display_name"].append()
+                records["display_name"].append(dname)
                 records["team"].append(tname)
                 records["lang"].append(lang)
                 records["score"].append(score)
