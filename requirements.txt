@@ -1,4 +1,6 @@
 requests
 BeautifulSoup4
+lxml
+html5lib
 pandas
 plotly
