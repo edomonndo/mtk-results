@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import datetime
 import sys
+import os
 
 username = os.environ.get("ATC_USERNAME ")
 password = os.environ.get("ATC_PASS ")
