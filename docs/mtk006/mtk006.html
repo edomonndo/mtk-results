@@ -12,15 +12,15 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="../css/styles.css" rel="stylesheet"/>
 <style>
-            iframe {
-                width: 100%;
-                height: 100%;
-                min-height: 500px;
-                margin-left: 20px;
-                margin-right: 20px;
-                border: 0px solid gray;
-            }
-        </style>
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0px solid gray;
+} 
+</style>
 </head>
 <body style="padding-top: 50px;">
 <div class="d-flex" id="wrapper">
@@ -314,5 +314,40 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="../js/scripts.js"></script>
+<script>
+const champion = document.createElement('img');
+champion.setAttribute('src', '../image/crown_champion.png');
+const gold = document.createElement('img');
+gold.setAttribute('src', '../image/crown_gold.png');
+const silver = document.createElement('img');
+silver.setAttribute('src', '../image/crown_silver.png');
+const bronze = document.createElement('img');
+bronze.setAttribute('src', '../image/crown_bronze.png');
+
+let table_elements = document.getElementsByClassName('dataframe');
+for (i=0; i<table_elements.length; i++) {
+  let table_rows = table_elements[i].rows;
+  for (j=0; j<table_rows.length; j++) {
+    let cell = table_rows[j].cells[3];
+    if (cell.tagName == "TD") { 
+      let score = cell.innerText;
+      let name = table_rows[j].cells[1];
+      if (score > 504832157) { 
+        let insert_image = champion.cloneNode(false);
+        name.prepend(insert_image);
+      } else if (score > 495007423) { 
+        let insert_image = gold.cloneNode(false);
+        name.prepend(insert_image);
+      } else if (score > 488451793) { 
+        let insert_image = silver.cloneNode(false);
+        name.prepend(insert_image);
+      } else if (score > 474078426) { 
+        let insert_image = bronze.cloneNode(false);
+        name.prepend(insert_image);
+      } 
+    }
+  }
+}
+</script>
 </body>
 </html>
