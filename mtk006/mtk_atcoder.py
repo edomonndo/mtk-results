@@ -188,17 +188,22 @@ df_team.head()
 
 
 """
-
+name_order = {"名前": sorted(set(df["名前"]))}
 df_line_indv = df.sort_values("提出日時", ascending=True)
 df_line_indv["スコア"] = df_line_indv.groupby("名前")["スコア"].cummax()
 
-fig_individual = px.line(df_line_indv, x="提出日時", y="スコア", color="名前")
+fig_individual = px.line(
+    df_line_indv, x="提出日時", y="スコア", color="名前", category_orders=name_order
+)
 fig_individual.show()
 
+team_order = {"チーム名": sorted(set(df["チーム名"]))}
 df_line_team = df.sort_values("提出日時", ascending=True)
 df_line_team["スコア"] = df_line_team.groupby("チーム名")["スコア"].cummax()
 
-fig_team = px.line(df_line_team, x="提出日時", y="スコア", color="チーム名")
+fig_team = px.line(
+    df_line_team, x="提出日時", y="スコア", color="チーム名", category_orders=team_order
+)
 fig_team.show()
 
 df_lang = (
