@@ -100,9 +100,9 @@ records = {
     "score": [],
     "submit": [],
     "elapsed_time": [],
-    # "argo_rate": [],
-    # "heuristic_rate": [],
-    # "performance": []
+    "argo_rate": [],
+    "heuristic_rate": [],
+    "performance": []
 }
 
 submission_url = (
@@ -136,6 +136,9 @@ while True:
             if name in personal.index:
                 tname = personal.at[name, "チーム名"]
                 dname = personal.at[name, "名前"]
+                a_rate = personal.at[name, "Aレート"]
+                h_rate = personal.at[name, "Hレート"]
+                perf = peronal.at[name, "BestPerf"]
                 records["name"].append(name)
                 records["display_name"].append(dname)
                 records["team"].append(tname)
@@ -143,9 +146,9 @@ while True:
                 records["score"].append(score)
                 records["submit"].append(submit)
                 records["elapsed_time"].append(elapsed_time)
-                # records["argo_rate"].append(a_rate)
-                # records["heuristic_rate"].append(h_rate)
-                # records["performance"].append(perf)
+                records["argo_rate"].append(a_rate)
+                records["heuristic_rate"].append(h_rate)
+                records["performance"].append(perf)
             else:
                 not_in_record.add(name)
         elif submit < contest_start:
@@ -157,7 +160,7 @@ while True:
 
 
 df = pd.DataFrame(data=records)
-df.columns = ["名前", "表示名", "チーム名", "言語", "スコア", "提出日時", "実行時間"]
+df.columns = ["名前", "表示名", "チーム名", "言語", "スコア", "提出日時", "実行時間", "アルゴレート", "ヒューリスティックレート", "ベストパフォーマンス"]
 
 df_individual = df.loc[df.groupby("名前")["スコア"].idxmax()]
 df_individual = df_individual.drop(columns=["言語", "提出日時", "実行時間"])
