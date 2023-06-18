@@ -225,7 +225,7 @@ df_lang = df_lang.loc[df_lang.groupby("名前")["スコア"].idxmax()]
 fig_lang = px.box(df_lang, x="言語", y="スコア", points="all")
 fig_lang.show()
 
-"""df_rate = df.loc[df.groupby("名前")["スコア"].idxmax()]
+df_rate = df.loc[df.groupby("名前")["スコア"].idxmax()]
 
 layout = go.Layout(
     xaxis = dict(title="レート", range = [0,3001], dtick=500),   # rangeで範囲、dtick で区間幅
@@ -244,7 +244,7 @@ fig_rate.update_yaxes(type="log")
 fig_rate.show()
 
 ## HTMLで書き出し
-"""
+
 
 fig_individual.write_html("docs/mtk006/line_individual.html")
 fig_team.write_html("docs/mtk006/line_team.html")
