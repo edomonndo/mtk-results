@@ -248,8 +248,8 @@ fig_rate.show()
 
 fig_individual.write_html("docs/mtk006/line_individual.html")
 fig_team.write_html("docs/mtk006/line_team.html")
-# fig_lang.write_html("docs/mtk006/box_lang.html")
-# fig_rate.write_html("docs/mtk006/scatter_rate.html")
+fig_lang.write_html("docs/mtk006/box_lang.html")
+fig_rate.write_html("docs/mtk006/scatter_rate.html")
 
 table_individual = df_individual.to_html(
     border=0,
