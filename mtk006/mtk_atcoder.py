@@ -138,7 +138,7 @@ while True:
                 dname = personal.at[name, "名前"]
                 a_rate = personal.at[name, "Aレート"]
                 h_rate = personal.at[name, "Hレート"]
-                perf = peronal.at[name, "BestPerf"]
+                perf = personal.at[name, "BestPerf"]
                 records["name"].append(name)
                 records["display_name"].append(dname)
                 records["team"].append(tname)
