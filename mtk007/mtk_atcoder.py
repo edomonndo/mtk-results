@@ -255,10 +255,10 @@ fig_rate.show()
 ## HTMLで書き出し
 
 
-fig_individual.write_html("docs/mtk006/line_individual.html")
-fig_team.write_html("docs/mtk006/line_team.html")
-fig_lang.write_html("docs/mtk006/box_lang.html")
-fig_rate.write_html("docs/mtk006/scatter_rate.html")
+fig_individual.write_html("docs/mtk007/line_individual.html")
+fig_team.write_html("docs/mtk007/line_team.html")
+fig_lang.write_html("docs/mtk007/box_lang.html")
+fig_rate.write_html("docs/mtk007/scatter_rate.html")
 
 table_individual = df_individual.to_html(
     border=0,
@@ -274,7 +274,7 @@ table_team = df_team.to_html(
     justify="left",
 )
 
-filepath = "docs/mtk006/mtk006.html"
+filepath = "docs/mtk007/mtk007.html"
 soup = BeautifulSoup(open(filepath), "html.parser")
 for i, div in enumerate(soup.select(".card-body")):
     if i == 1:
