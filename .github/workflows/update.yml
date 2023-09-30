@@ -31,5 +31,5 @@ jobs:
       env:
         ATC_USERNAME: ${{ secrets.ATC_USERNAME }}
         ATC_PASS: ${{ secrets.ATC_PASS }}
-      run: python mtk006/mtk_atcoder.py 
+      run: python mtk007/mtk_atcoder.py 
     - uses: stefanzweifel/git-auto-commit-action@v4
